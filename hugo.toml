@@ -1,0 +1,18 @@
+baseURL = 'https://dewaldv.com/'
+languageCode = 'en-GB'
+title = 'DEWALD VILJOEN'
+
+theme = ["github.com/colorchestra/smol"]
+
+[menu]
+  [[menu.main]]
+  identifier = "about"
+  name = "ABOUT"
+  url = "/about/"
+  weight = 1
+
+  [[menu.main]]
+  identifier = "posts"
+  name = "POSTS"
+  url = "/posts/"
+  weight = 2

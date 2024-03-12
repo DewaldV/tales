@@ -1,0 +1,13 @@
+<header>
+	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a><br>
+	<p>
+  <hr>
+	<nav>
+			{{ with .Site.Menus.main }}
+			{{ range . }}
+			<a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
+			{{ end }}
+	</nav>
+	</p>
+	{{ end }}
+</header>
