@@ -1,41 +1,31 @@
 ---
-title: "About me"
+title: "Hi, I'm Dewald"
 description: "Principal Engineer, Linux enthusiast, and perpetual tinkerer"
 ---
 
-## Hi, I'm Dewald
-
-I'm a Principal Engineer at [RVU](https://www.rvu.co.uk/) (makers of uswitch), based in Bath, UK. I deliver ambitious technical solutions to business challenges in platform engineering, with a focus on cloud infrastructure, Kubernetes, and developer tooling.
+I'm a Principal Engineer at [RVU](https://www.rvu.co.uk/), based in Bath, UK. My day-to-day is in platform engineering - distributed systems, cloud infrastructure (mostly AWS), Kubernetes, and developer tooling.
 
 ### What I'm Into
 
-**Tech-wise**, I'm all about Linux (NixOS is my jam), Rust, Go, and Kubernetes. I'm currently learning Rust by building small games with [Bevy](https://bevyengine.org/) as a way to explore the language beyond typical backend work.
+I spend most of my time in Linux (NixOS specifically), Rust, and Go. I'm currently learning Rust by building small games with [Bevy](https://bevyengine.org/) as a way to explore the language beyond typical backend work.
 
-I'm a strong believer in declarative configuration and reproducible environments. My [NixOS configuration](https://github.com/DewaldV/nixos) repository is a testament to that philosophy - managing multiple machines declaratively makes life so much easier. I run a homelab with Home Assistant on a Raspberry Pi and maintain several NixOS machines for various purposes.
-
-My professional work focuses on distributed systems, cloud architecture (particularly AWS), and developer platform engineering.
+I like declarative configuration and reproducible environments. My [NixOS config](https://github.com/DewaldV/nixos) manages multiple machines and I run a homelab with [Home Assistant](https://www.home-assistant.io/) on a Raspberry Pi alongside several NixOS boxes.
 
 ### The Homelab
 
-I'm actively building out my home automation setup, currently planning upgrades including smart heating with Zigbee TRVs and proper network infrastructure throughout the house. Home Assistant is the brain of the operation, and I'm constantly tinkering with new integrations and automations.
+I'm always tinkering with my home automation setup - currently planning smart heating with Zigbee TRVs and running proper cable throughout the house. I lean heavily toward self-hosting and local control over cloud-dependent services, and I'm gradually working on de-Googling.
 
-I'm also passionate about privacy-first technology solutions and self-hosting. I prefer local control over cloud-dependent services wherever possible, and I'm gradually moving away from big tech dependencies (yes, still working on fully de-Googling).
+### Other Interests
 
-### Beyond the Code
-
-When I'm not wrestling with distributed systems or diving into the Rust type system, you might find me:
-- Gaming on Linux (yes, it works great these days!)
-- Boxing at UBX Training
-- Optimizing my fitness tracking setup with Garmin and Myzone
-- Tinkering with my Framework laptop and NixOS configurations
-- Working in Doom Emacs with gptel integration for AI-assisted development
+- Gaming on Linux
+- Boxing and hiking
+- Tinkering with my Framework laptop
+- Doom Emacs
 
 ### Get In Touch
-
-Want to chat about NixOS, Rust, platform engineering, or anything else tech? Feel free to reach out:
 
 - [GitHub](https://github.com/DewaldV)
 - [LinkedIn](https://www.linkedin.com/in/dewaldv/)
 - Email: dv@dewaldv.com
 
-_Fluffy, Code-smith, Gentle-pony Adventurer_ 👻
+_Fluffy, Code-smith, Gentle-pony Adventurer_
