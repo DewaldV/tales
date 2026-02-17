@@ -16,7 +16,7 @@ html {
   --mutedcolor: #666;
 }
 
-/* Dark mode */
+/* Dark mode - OS preference */
 @media (prefers-color-scheme: dark) {
   :root {
     --bgcolor: #202020;
@@ -28,6 +28,30 @@ html {
     --hrcolor: #444;
     --mutedcolor: #999;
   }
+}
+
+/* Dark mode - manual override */
+[data-theme="dark"] {
+  --bgcolor: #202020;
+  --fontcolor: #e0e0e0;
+  --linkcolor: #dcdcdc;
+  --visitedcolor: #dcdcdc;
+  --precolor: #fff;
+  --prebgcolor: #383838;
+  --hrcolor: #444;
+  --mutedcolor: #999;
+}
+
+/* Light mode - manual override */
+[data-theme="light"] {
+  --bgcolor: #f5f5f5;
+  --fontcolor: #222;
+  --linkcolor: #444;
+  --visitedcolor: #555;
+  --precolor: #222;
+  --prebgcolor: #e0e0e0;
+  --hrcolor: #ccc;
+  --mutedcolor: #666;
 }
 
 /* Base */
@@ -133,6 +157,7 @@ img {
 
 .site-nav {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -156,6 +181,21 @@ footer p {
 
 footer a {
   color: var(--mutedcolor);
+}
+
+/* Theme toggle */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--hrcolor);
+  color: var(--fontcolor);
+  font: inherit;
+  padding: 0 8px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--fontcolor);
 }
 
 /* Responsive */

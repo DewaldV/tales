@@ -3,6 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		(function() {
+			var t = localStorage.getItem('theme');
+			if (t) document.documentElement.setAttribute('data-theme', t);
+		})();
+	</script>
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
@@ -18,5 +24,19 @@
 	{{ partial "header" . }}
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer" . }}
+	<script>
+		document.querySelector('.theme-toggle').addEventListener('click', function() {
+			var current = document.documentElement.getAttribute('data-theme');
+			var isDark;
+			if (current) {
+				isDark = current === 'dark';
+			} else {
+				isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			}
+			var next = isDark ? 'light' : 'dark';
+			document.documentElement.setAttribute('data-theme', next);
+			localStorage.setItem('theme', next);
+		});
+	</script>
 </body>
 </html>
