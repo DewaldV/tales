@@ -2,7 +2,7 @@ baseURL = 'https://dewaldv.com/'
 languageCode = 'en-GB'
 title = 'DEWALD VILJOEN'
 
-theme = ["github.com/colorchestra/smol"]
+theme = "tales"
 
 [menu]
   [[menu.main]]
