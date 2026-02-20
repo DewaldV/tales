@@ -101,6 +101,37 @@ pre code {
   background: none;
 }
 
+/* Latest post callout */
+.latest-post {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid var(--hrcolor);
+  margin-bottom: 32px;
+}
+
+.latest-post-label {
+  color: var(--mutedcolor);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.latest-post a {
+  flex: 1;
+  text-decoration: none;
+}
+
+.latest-post a:hover {
+  text-decoration: underline;
+}
+
+.latest-post-date {
+  color: var(--mutedcolor);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 /* Content */
 article {
   padding: 24px 0;

@@ -5,4 +5,9 @@
 	| <a href="{{ .URL }}">{{ .Name }}</a>
 	{{- end }}
 	</p>
+	<p>
+		{{ with .Site.Params.github }}<a href="{{ . }}">GitHub</a>{{ end }}
+		{{ with .Site.Params.linkedin }}| <a href="{{ . }}">LinkedIn</a>{{ end }}
+		{{ with .Site.Params.email }}| <a href="mailto:{{ . }}">Email</a>{{ end }}
+	</p>
 </footer>

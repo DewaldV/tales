@@ -1,6 +1,7 @@
 ---
 title: "Hi, I'm Dewald"
 description: "Principal Engineer, Linux enthusiast, and perpetual tinkerer"
+layout: "about"
 ---
 
 I'm a Principal Engineer at [RVU](https://www.rvu.co.uk/), based in Bath, UK. My day-to-day is in platform engineering - distributed systems, cloud infrastructure (mostly AWS), Kubernetes, and developer tooling.
@@ -22,10 +23,5 @@ I'm always tinkering with my home automation setup - currently planning smart he
 - Tinkering with my Framework laptop
 - Doom Emacs
 
-### Get In Touch
-
-- [GitHub](https://github.com/DewaldV)
-- [LinkedIn](https://www.linkedin.com/in/dewaldv/)
-- Email: dv@dewaldv.com
 
 _Fluffy, Code-smith, Gentle-pony Adventurer_

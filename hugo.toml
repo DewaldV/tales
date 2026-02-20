@@ -4,6 +4,12 @@ title = 'DEWALD VILJOEN'
 
 theme = "tales"
 
+[params]
+  mainSections = ["posts"]
+  github = "https://github.com/DewaldV"
+  linkedin = "https://www.linkedin.com/in/dewaldv/"
+  email = "dv@dewaldv.com"
+
 [menu]
   [[menu.main]]
   identifier = "about"

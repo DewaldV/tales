@@ -1,7 +1,8 @@
 +++
 title = 'Learning Rust: Error handling with Result and Option'
 date = 2024-05-01T08:54:00Z
-draft = true
+draft = false
+tags = ['rust', 'error-handling']
 +++
 
 ## Learning Rust

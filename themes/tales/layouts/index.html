@@ -1,6 +1,14 @@
 {{ define "main" }}
 	<main>
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+		{{ $posts := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+		{{ with index ($posts.ByDate.Reverse) 0 }}
+		<div class="latest-post">
+			<span class="latest-post-label">latest post</span>
+			<a href="{{ .Permalink }}">{{ .Title }}</a>
+			<span class="latest-post-date">{{ .Date.Format "2006-01-02" }}</span>
+		</div>
+		{{ end }}
+		{{ $paginator := .Paginate $posts }}
 		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
