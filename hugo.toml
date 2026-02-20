@@ -1,11 +1,14 @@
 baseURL = 'https://dewaldv.com/'
 languageCode = 'en-GB'
 title = 'DEWALD VILJOEN'
+copyright = 'Dewald Viljoen'
 
 theme = "tales"
 
 [params]
   mainSections = ["posts"]
+  description = "A blog about Linux, Rust, homelabbing, and life as a developer."
+  author = "Dewald Viljoen"
   github = "https://github.com/DewaldV"
   linkedin = "https://www.linkedin.com/in/dewaldv/"
   email = "dv@dewaldv.com"

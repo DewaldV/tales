@@ -9,9 +9,22 @@
 			if (t) document.documentElement.setAttribute('data-theme', t);
 		})();
 	</script>
-	<title>{{ .Title }}</title>
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+
+	{{- $description := .Site.Params.description }}
+	{{- with .Description }}{{ $description = . }}{{ end }}
+	{{- if and (not .Description) .IsPage }}{{ with .Summary }}{{ $description = . }}{{ end }}{{ end }}
+	<meta name="description" content="{{ $description }}">
+
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="canonical" href="{{ .Permalink }}">
+
+	<meta property="og:title" content="{{ .Title }}">
+	<meta property="og:description" content="{{ $description }}">
+	<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+	<meta property="og:url" content="{{ .Permalink }}">
+	<meta property="og:site_name" content="{{ .Site.Title }}">
+
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	{{ range .Site.Params.customCSS -}}
 		<link rel="stylesheet" href="{{ . | relURL }}">

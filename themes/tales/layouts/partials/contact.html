@@ -1,6 +1,6 @@
 {{ if or .Site.Params.github .Site.Params.linkedin .Site.Params.email }}
 <div class="contact">
-	<h3>Get In Touch</h3>
+	<h2>Get In Touch</h2>
 	<ul>
 		{{ with .Site.Params.github }}<li><a href="{{ . }}">GitHub</a></li>{{ end }}
 		{{ with .Site.Params.linkedin }}<li><a href="{{ . }}">LinkedIn</a></li>{{ end }}

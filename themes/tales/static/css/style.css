@@ -101,6 +101,12 @@ pre code {
   background: none;
 }
 
+/* Contact */
+.contact a {
+  display: inline-block;
+  padding: 8px 0;
+}
+
 /* Latest post callout */
 .latest-post {
   display: flex;
