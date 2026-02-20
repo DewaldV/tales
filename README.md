@@ -1,4 +1,4 @@
-# tales from the deep
+# Tales
 
 Static blog site build with [Hugo](https://github.com/gohugoio/hugo).
 
