@@ -133,7 +133,7 @@ Guidelines for tone, punctuation, and structure in blog post content.
 
 - Open with a short paragraph that sets up the problem and gives enough context (what system, what hardware, what the symptom was) for a reader to know if this post is relevant to them.
 - Use `##` headings to break the post into logical sections. Each section should advance the narrative or introduce a new concept.
-- End with a summary or outcome, not a call to action or sign-off.
+- End with a summary or outcome, not a call to action or sign-off. A short closing reflection that ties the post to a broader theme or links to a related post is fine, as long as it adds context rather than generic optimism.
 - Code blocks should use language hints where appropriate (e.g. ` ```nix `, ` ```rust `).
 
 ### Links
