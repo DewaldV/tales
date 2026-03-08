@@ -1,7 +1,7 @@
 +++
 title = 'NixOS: A developer workstation setup'
 date = 2025-02-10T10:00:00Z
-draft = false
+draft = true
 tags = ['nixos', 'nix', 'linux']
 +++
 

@@ -1,7 +1,7 @@
 +++
 title = 'De-Googling: Taking back your digital life'
 date = 2025-02-01T10:00:00Z
-draft = false
+draft = true
 tags = ['privacy', 'linux', 'self-hosting']
 +++
 
