@@ -17,7 +17,7 @@ I cleared the whole state directory and restarted WirePlumber, set the volume to
 
 The most useful observation came from restarting WirePlumber manually:
 
-```
+```console
 systemctl --user restart wireplumber
 ```
 
@@ -37,7 +37,7 @@ That also explained why the `pavucontrol` workaround worked. It goes through the
 
 I checked the kernel log and found one relevant line, logged 9 seconds after the Schiit enumerated:
 
-```
+```console
 usb 1-5.4.3: 17:0: failed to get current value for ch 0 (-32)
 ```
 
