@@ -105,6 +105,45 @@ Running `hugo new content/posts/YYYY-MM-DD-slug.md` scaffolds a TOML front matte
 
 ---
 
+## Writing Style
+
+Guidelines for tone, punctuation, and structure in blog post content.
+
+### Tone
+
+- Write in first person. Posts are personal accounts of real problems, decisions, and setups.
+- Be direct and conversational, not formal or academic. Write like you're explaining something to a colleague.
+- Let the technical detail carry the weight. Avoid hype, filler, or unnecessary hedging.
+- British English throughout (consistent with `languageCode: en-GB` in `hugo.toml`).
+
+### Voice pattern
+
+- Frame each section with a short narrator line at the top ("I checked the journal", "I found one relevant line") to ground the reader in the investigation, then let the technical detail run plain after that.
+- First person is for actions and decisions ("I enabled debug logging", "I rebooted"). Technical explanations that follow can be impersonal and passive where it reads more naturally.
+- Not every sentence needs "I". Once the narrator has set the scene for a section, factual statements can stand on their own ("The fallback is the hardware default, 1.0.").
+- Summary or recap sections at the end of a post can drop the narrator entirely and be purely technical. This is a deliberate shift in register and works as a concise reference for readers skimming back.
+
+### Punctuation
+
+- **No em-dashes** (`—`). Use a comma (`,`) or a dash (`-`) instead. Prefer commas.
+- Use backticks for all inline code, commands, file paths, config keys, and error messages.
+- Colons are fine for introducing lists, code blocks, or explanations.
+
+### Structure
+
+- Open with a short paragraph that sets up the problem and gives enough context (what system, what hardware, what the symptom was) for a reader to know if this post is relevant to them.
+- Use `##` headings to break the post into logical sections. Each section should advance the narrative or introduce a new concept.
+- End with a summary or outcome, not a call to action or sign-off.
+- Code blocks should use language hints where appropriate (e.g. ` ```nix `, ` ```rust `).
+
+### Links
+
+- Link to upstream documentation (kernel docs, WirePlumber docs, tool manpages) where a reader might want to dig deeper.
+- Place the link inline on the most descriptive phrase, not on "here" or "this".
+- Keep linking light. Not every technical term needs a link, only the ones where the external doc adds genuine value.
+
+---
+
 ## Hugo Templates
 
 ### Layout Hierarchy
