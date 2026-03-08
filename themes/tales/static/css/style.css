@@ -84,7 +84,6 @@ h1, h2, h3 {
 
 /* Code */
 code {
-  color: var(--precolor);
   background: var(--prebgcolor);
   padding: 2px 4px;
 }
