@@ -5,7 +5,9 @@ draft = false
 tags = ['nixos', 'linux', 'security', 'ssh', 'git']
 +++
 
-**Update, 2026-03-24:** Proton has merged support for a `PROTON_PASS_LINUX_KEYRING` environment variable that switches `pass-cli` from the kernel keyring to the D-Bus Secret Service. With GNOME Keyring unlocked at login, the manual `pass-ssh-load` step is gone and SSH keys can be loaded automatically via a systemd user service. I've written up the full config change in a [follow-up post](/posts/2026-03-24-proton-pass-secret-service/).
+{{< update "2026-03-24" >}}
+Proton has merged support for a `PROTON_PASS_LINUX_KEYRING` environment variable that switches `pass-cli` from the kernel keyring to the D-Bus Secret Service. With GNOME Keyring unlocked at login, the manual `pass-ssh-load` step is gone and SSH keys can be loaded automatically via a systemd user service. I've written up the full config change in a [follow-up post](/posts/2026-03-24-proton-pass-secret-service/).
+{{< /update >}}
 
 With a recent change to pricing for 1Password I've finally made the decision to migrate over to Proton Pass. It's already included in my Proton Duo subscription and Proton Pass has made strides with its features since launch.
 
