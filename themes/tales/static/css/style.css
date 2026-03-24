@@ -147,6 +147,22 @@ hr {
   border-top: 1px solid var(--hrcolor);
 }
 
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th, td {
+  padding: 6px 12px;
+  text-align: left;
+}
+
+th {
+  background: var(--prebgcolor);
+}
+
 /* Images */
 .center {
   display: block;
