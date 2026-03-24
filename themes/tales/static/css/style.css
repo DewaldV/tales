@@ -12,6 +12,8 @@ html {
   --visitedcolor: #2a5575;
   --precolor: #222;
   --prebgcolor: #e0e0e0;
+  --codebgcolor: #dde4ec;
+  --codecolor: #1e3a52;
   --calloutbgcolor: #ebebeb;
   --hrcolor: #ccc;
   --mutedcolor: #666;
@@ -26,6 +28,8 @@ html {
     --visitedcolor: #4a7a95;
     --precolor: #fff;
     --prebgcolor: #383838;
+    --codebgcolor: #2a3340;
+    --codecolor: #a8c4d8;
     --calloutbgcolor: #2e2e2e;
     --hrcolor: #444;
     --mutedcolor: #999;
@@ -40,6 +44,8 @@ html {
   --visitedcolor: #4a7a95;
   --precolor: #fff;
   --prebgcolor: #383838;
+  --codebgcolor: #2a3340;
+  --codecolor: #a8c4d8;
   --calloutbgcolor: #2e2e2e;
   --hrcolor: #444;
   --mutedcolor: #999;
@@ -53,6 +59,8 @@ html {
   --visitedcolor: #2a5575;
   --precolor: #222;
   --prebgcolor: #e0e0e0;
+  --codebgcolor: #dde4ec;
+  --codecolor: #1e3a52;
   --calloutbgcolor: #ebebeb;
   --hrcolor: #ccc;
   --mutedcolor: #666;
@@ -103,7 +111,8 @@ h1, h2, h3 {
 
 /* Code */
 code {
-  background: var(--prebgcolor);
+  background: var(--codebgcolor);
+  color: var(--codecolor);
   padding: 2px 4px;
 }
 
@@ -116,6 +125,7 @@ pre {
 
 pre code {
   padding: 0;
+  color: inherit;
   background: none;
 }
 
