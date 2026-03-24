@@ -13,6 +13,9 @@ theme = "tales"
   linkedin = "https://www.linkedin.com/in/dewaldv/"
   email = "dv@dewaldv.com"
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [menu]
   [[menu.main]]
   identifier = "about"

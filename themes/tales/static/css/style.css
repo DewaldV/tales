@@ -8,10 +8,11 @@ html {
 :root {
   --bgcolor: #f5f5f5;
   --fontcolor: #222;
-  --linkcolor: #444;
-  --visitedcolor: #555;
+  --linkcolor: #3a6a8f;
+  --visitedcolor: #2a5575;
   --precolor: #222;
   --prebgcolor: #e0e0e0;
+  --calloutbgcolor: #ebebeb;
   --hrcolor: #ccc;
   --mutedcolor: #666;
 }
@@ -21,10 +22,11 @@ html {
   :root {
     --bgcolor: #202020;
     --fontcolor: #e0e0e0;
-    --linkcolor: #dcdcdc;
-    --visitedcolor: #dcdcdc;
+    --linkcolor: #5a8fab;
+    --visitedcolor: #4a7a95;
     --precolor: #fff;
     --prebgcolor: #383838;
+    --calloutbgcolor: #2e2e2e;
     --hrcolor: #444;
     --mutedcolor: #999;
   }
@@ -34,10 +36,11 @@ html {
 [data-theme="dark"] {
   --bgcolor: #202020;
   --fontcolor: #e0e0e0;
-  --linkcolor: #dcdcdc;
-  --visitedcolor: #dcdcdc;
+  --linkcolor: #5a8fab;
+  --visitedcolor: #4a7a95;
   --precolor: #fff;
   --prebgcolor: #383838;
+  --calloutbgcolor: #2e2e2e;
   --hrcolor: #444;
   --mutedcolor: #999;
 }
@@ -46,10 +49,11 @@ html {
 [data-theme="light"] {
   --bgcolor: #f5f5f5;
   --fontcolor: #222;
-  --linkcolor: #444;
-  --visitedcolor: #555;
+  --linkcolor: #3a6a8f;
+  --visitedcolor: #2a5575;
   --precolor: #222;
   --prebgcolor: #e0e0e0;
+  --calloutbgcolor: #ebebeb;
   --hrcolor: #ccc;
   --mutedcolor: #666;
 }
@@ -66,14 +70,29 @@ body {
 
 /* Links */
 a:link {
-  color: var(--linkcolor);
+  color: var(--fontcolor);
 }
 
 a:visited {
-  color: var(--visitedcolor);
+  color: var(--mutedcolor);
 }
 
 a:active {
+  color: var(--mutedcolor);
+}
+
+article a:link,
+main ul a:link {
+  color: var(--linkcolor);
+}
+
+article a:visited,
+main ul a:visited {
+  color: var(--visitedcolor);
+}
+
+article a:active,
+main ul a:active {
   color: var(--visitedcolor);
 }
 
@@ -147,6 +166,21 @@ hr {
   border-top: 1px solid var(--hrcolor);
 }
 
+/* Update callout */
+.callout-update {
+  border-left: 3px solid var(--hrcolor);
+  background: var(--calloutbgcolor);
+  padding: 12px 16px;
+  margin: 1em 0;
+}
+
+.callout-update-label {
+  display: block;
+  color: var(--fontcolor);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
 /* Tables */
 table {
   border-collapse: collapse;
@@ -213,11 +247,20 @@ img {
   gap: 20px;
 }
 
-.site-nav a {
+.site-nav a,
+.site-nav a:link,
+.site-nav a:visited,
+.site-nav a:active,
+.site-title,
+.site-title:link,
+.site-title:visited,
+.site-title:active {
+  color: var(--fontcolor);
   text-decoration: none;
 }
 
-.site-nav a:hover {
+.site-nav a:hover,
+.site-title:hover {
   text-decoration: underline;
 }
 
