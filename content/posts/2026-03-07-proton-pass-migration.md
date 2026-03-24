@@ -120,3 +120,5 @@ After applying the config:
 The main limitation compared to 1Password is the manual step after reboot. 1Password's agent is always-on once the app is unlocked; `pass-cli` needs an explicit login each boot due to the kernel keyring being wiped. That's an upstream limitation worth tracking.
 
 I'll miss some of 1Password's quality of life, its CLI is tightly integrated with the desktop app and so are its browser extensions. But this move is part of a broader shift away from US-based cloud services towards European alternatives, something I'm writing about separately in the context of de-googling. Proton Pass has a few rough edges but the trade-offs are worth it.
+
+**Update, 2026-03-24:** Proton has merged support for a `PROTON_PASS_LINUX_KEYRING` environment variable that switches `pass-cli` from the kernel keyring to the D-Bus Secret Service. With GNOME Keyring unlocked at login, the manual `pass-ssh-load` step is gone and SSH keys can be loaded automatically via a systemd user service. I've written up the full config change in a [follow-up post](/posts/2026-03-24-proton-pass-secret-service/).
