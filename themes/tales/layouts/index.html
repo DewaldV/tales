@@ -5,7 +5,7 @@
 		<div class="latest-post">
 			<span class="latest-post-label">latest post</span>
 			<a href="{{ .Permalink }}">{{ .Title }}</a>
-			<span class="latest-post-date">{{ .Date.Format "2006-01-02" }}</span>
+			<span class="latest-post-date">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</span>
 		</div>
 		{{ end }}
 		{{ $paginator := .Paginate $posts }}

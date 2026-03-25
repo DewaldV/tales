@@ -7,6 +7,7 @@ theme = "tales"
 
 [params]
   mainSections = ["posts"]
+  dateFmt = "2006-01-02"
   description = "A blog about Linux, Rust, homelabbing, and life as a developer."
   author = "Dewald Viljoen"
   github = "https://github.com/DewaldV"

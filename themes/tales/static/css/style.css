@@ -167,6 +167,30 @@ pre code {
 }
 
 /* Content */
+time {
+  font-weight: bold;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.tags a,
+.tags a:link,
+.tags a:visited,
+.tags a:active {
+  color: var(--mutedcolor);
+  text-decoration: none;
+}
+
+.tags a:hover {
+  text-decoration: underline;
+}
+
 article {
   padding: 24px 0;
 }
