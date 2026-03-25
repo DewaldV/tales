@@ -171,6 +171,10 @@ article {
   padding: 24px 0;
 }
 
+article li {
+  margin-bottom: 0.5em;
+}
+
 hr {
   border: none;
   border-top: 1px solid var(--hrcolor);
