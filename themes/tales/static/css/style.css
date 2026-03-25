@@ -71,7 +71,9 @@ body {
   max-width: 800px;
   margin: 40px auto;
   padding: 0 10px;
-  font: 14px/1.6 monospace;
+  font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  font-size: 14px;
+  line-height: 1.6;
   color: var(--fontcolor);
   background: var(--bgcolor);
 }
