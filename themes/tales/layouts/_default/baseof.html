@@ -25,6 +25,7 @@
 	<meta property="og:url" content="{{ .Permalink }}">
 	<meta property="og:site_name" content="{{ .Site.Title }}">
 
+	<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	{{ range .Site.Params.customCSS -}}
 		<link rel="stylesheet" href="{{ . | relURL }}">
