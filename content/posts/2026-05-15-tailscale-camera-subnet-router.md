@@ -2,7 +2,7 @@
 title = 'Watching my cats from anywhere with Tailscale'
 date = 2026-05-15T09:00:00Z
 draft = false
-tags = ['tailscale', 'networking', 'raspberry-pi', 'homelab', 'privacy']
+tags = ['tailscale', 'networking', 'reolink', 'homelab', 'privacy']
 +++
 
 I have a couple of cameras around the house to keep an eye on the cats when I'm away. The ones I use are [Reolink E1 Zoom](https://reolink.com/product/e1-zoom/) cameras. They work entirely offline, no cloud account required, no mandatory app sign-in, just a camera on the local network. The limitation is obvious once you leave the house. If the camera is only reachable on `192.168.0.x`, remote access usually means either handing that job to Reolink's relay service or exposing something on your own network. I wanted neither.
