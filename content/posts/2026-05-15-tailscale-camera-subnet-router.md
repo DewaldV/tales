@@ -36,7 +36,7 @@ With the phone connected to the same Wi-Fi network as the camera, open the Reoli
 	</figure>
 </div>
 
-Once added, the app talks straight to the camera over the LAN. Live view, playback, and settings work without any cloud involvement. That is the baseline worth preserving when away from home.
+Once added, the app talks straight to the camera over the LAN. Live view, playback, and settings work without any cloud involvement. That's the exact setup I'm aiming for.
 
 ![Reolink app showing a live camera feed from the local network](/images/posts/tailscale-camera-subnet-router/reolink-live-view.png "Once added, the app talks directly to the camera over the LAN.")
 
