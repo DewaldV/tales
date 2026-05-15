@@ -114,7 +114,7 @@ Guidelines for tone, punctuation, and structure in blog post content.
 - Write in first person. Posts are personal accounts of real problems, decisions, and setups.
 - Be direct and conversational, not formal or academic. Write like you're explaining something to a colleague.
 - Let the technical detail carry the weight. Avoid hype, filler, or unnecessary hedging.
-- British English throughout (consistent with `languageCode: en-GB` in `hugo.toml`).
+- British English throughout (consistent with `locale: en-GB` in `hugo.toml`).
 
 ### Voice pattern
 
@@ -235,7 +235,7 @@ The existing section order is: variables → base → links → headings → cod
 
 - Format: TOML throughout.
 - `baseURL`: `https://dewaldv.com/`
-- `languageCode`: `en-GB` — use British English in all UI strings.
+- `locale`: `en-GB` — use British English in all UI strings.
 - Site title: `DEWALD VILJOEN` (all caps) — do not change casing.
 - `params.mainSections = ["posts"]` — required for the homepage post list and latest-post callout.
 - Social params (`github`, `linkedin`, `email`) are the single source of truth for contact details. Update them here, not in templates or content.
