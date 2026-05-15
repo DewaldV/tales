@@ -263,6 +263,23 @@ img {
   margin: auto;
 }
 
+img[src*="reolink-lan-devices.png"],
+img[src*="reolink-add-by-ip.png"],
+img[src*="reolink-live-view.png"] {
+  max-width: min(100%, 360px);
+}
+
+.image-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 1em 0;
+}
+
+.image-pair figure {
+  margin: 0;
+}
+
 /* Header */
 .site-header {
   margin-bottom: 40px;
@@ -343,5 +360,9 @@ footer a {
 
   .site-nav {
     gap: 15px;
+  }
+
+  .image-pair {
+    grid-template-columns: 1fr;
   }
 }
