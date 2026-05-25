@@ -27,7 +27,7 @@ There are **no lint, format, or test commands**. Hugo itself validates templates
 
 ### Nix Dev Environment
 
-The repo uses Nix flakes + direnv. If the Nix shell is active (via `direnv allow` or `nix develop`), `hugo` and `go` are available automatically.
+The repo uses [devenv](https://devenv.sh/) + direnv. If the dev shell is active (via `direnv allow` or `devenv shell`), `hugo` and `go` are available automatically. The `.envrc` uses `use devenv`.
 
 ### CI/CD
 
