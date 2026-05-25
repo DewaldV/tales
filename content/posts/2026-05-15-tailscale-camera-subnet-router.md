@@ -21,7 +21,7 @@ That is the whole reason this approach works. The camera does not need to know a
 
 ## Getting the app working locally first
 
-I set up the local path first, because the remote path is just an extension of it.
+I set up the local path first, because, with Tailscale, the remote path is just an extension of it.
 
 With the phone connected to the same Wi-Fi network as the camera, open the Reolink app and add the device from the local network or by IP address rather than QR code or cloud discovery. The IP can come from your router's DHCP lease list or from the camera's own network settings page. The default credentials are printed on the camera label, and are worth changing immediately.
 
