@@ -335,6 +335,19 @@ footer a {
   color: var(--mutedcolor);
 }
 
+/* Footer links */
+.footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-links svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
 /* Theme toggle */
 .theme-toggle {
   background: none;

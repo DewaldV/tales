@@ -29,3 +29,8 @@ theme = "tales"
   name = "POSTS"
   url = "/posts/"
   weight = 2
+
+  [[menu.footer]]
+  identifier = "credits"
+  name = "Credits"
+  url = "/credits/"
