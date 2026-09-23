@@ -1,5 +1,6 @@
 .direnv/
 .devenv/
 .devenv.flake.nix
+.hugo_build.lock
 public/
 resources/
