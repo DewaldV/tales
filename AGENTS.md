@@ -33,9 +33,9 @@ The repo uses [devenv](https://devenv.sh/) + direnv. If the dev shell is active 
 
 GitHub Actions (`.github/workflows/hugo.yaml`) builds with:
 ```bash
-hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+devenv shell -- hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 ```
-Pinned to **Hugo 0.155.3 extended**. Sets `HUGO_ENVIRONMENT=production`.
+CI installs Nix and devenv, then runs this build with `devenv shell --`. Hugo comes from `devenv.nix` and the pinned `devenv.lock` rather than a separate CI version. Sets `HUGO_ENVIRONMENT=production`.
 
 ---
 
