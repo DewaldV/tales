@@ -265,7 +265,8 @@ img {
 
 img[src*="reolink-lan-devices.png"],
 img[src*="reolink-add-by-ip.png"],
-img[src*="reolink-live-view.png"] {
+img[src*="reolink-live-view.png"],
+img[src*="apple-tv-home-assistant-remote/mobile-dashboard.png"] {
   max-width: min(100%, 360px);
 }
 
